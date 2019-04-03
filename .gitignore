@@ -35,8 +35,3 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-
-# Project Files
-Assets/Scripts/Secrets.cs
-Assets/Scripts/Secrets.cs.meta
-Assets/Scripts/Secrets.cs
