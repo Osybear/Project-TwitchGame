@@ -15,21 +15,9 @@ public class TwitchClient : MonoBehaviour {
         ConnectionCredentials credentials = new ConnectionCredentials("osybearbot", Secrets.bot_access_token);
         client = new Client();
         client.Initialize(credentials, channel_name);
-        Debug.Log("Client Initialization");
+        Debug.Log("Client Initialized");
         client.Connect();
         Debug.Log("Client Connected");
     }
 
-    /* 
-    private void Update() {
-        if(Input.GetKeyDown(KeyCode.Space)) {
-            client.SendMessage(client.JoinedChannels[0], "Hello World!");
-            Debug.Log("Test Message Sent");
-        }
-    }
-    */
-
-    private void OnMessageReceived(object sender, TwitchLib.Client.Events.OnMessageReceivedArgs e) {
-        Debug.Log(e.ChatMessage.Username + ": "+e.ChatMessage.Message);
-    }
 }
